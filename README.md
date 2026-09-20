@@ -60,7 +60,7 @@ Features details:
 - Why it helps: early lifecycle customers usually churn more, so this feature captures that behavior directly.
 
 ### 4. Model Building
-- Trained Decision Tree models with different parameter settings.
+- Trained Two Decision Tree models(max_depth=4 and max_depth=8) with different parameter settings.
 - Compared them using validation metrics.
 - ran GridSearch tuning.
 - Selected final model based on churn-focused performance (especially recall/F1).

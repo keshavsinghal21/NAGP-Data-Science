@@ -99,10 +99,6 @@ month-to-month customers without tech support are high-risk.
 - Built Flask POST API with '/predict'.
 - API returns both prediction and churn probability.
 
-Note:
-- kept feature creation logic inside the API code for this assignment so the flow stays simple and easy to explain.
-- The same feature logic is applied at prediction time, so the output remains consistent.
-
 ## Steps to Run This
 
 Python version used in this project: 3.13
@@ -124,12 +120,13 @@ Run below curl command:
 
 curl.exe -X POST "http://127.0.0.1:5000/predict" -H "Content-Type: application/json" --data "@sample_request.json"
 
+`
 Sample json response:
-
 {   
   "churn_probability": 0.7471,
   "prediction": "Yes"
 }
+`
 
 ## Final Suggestion
 For retention action, first target:
